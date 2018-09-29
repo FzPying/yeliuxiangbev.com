@@ -2,8 +2,8 @@ package routers
 
 import (
 	"github.com/fzpying/beego"
-	"github.com/yeliuxiangbev.com/application/controllers/home"
-	"github.com/yeliuxiangbev.com/application/controllers/manage"
+	"github.com/fzpying/yeliuxiangbev.com/application/controllers/home"
+	"github.com/fzpying/yeliuxiangbev.com/application/controllers/manage"
 )
 
 func init() {

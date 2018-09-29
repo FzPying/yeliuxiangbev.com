@@ -1,8 +1,8 @@
 package manage
 
 import (
-	"github.com/yeliuxiangbev.com/application/controllers"
-	"github.com/yeliuxiangbev.com/application/models"
+	"github.com/fzpying/yeliuxiangbev.com/application/controllers"
+	"github.com/fzpying/yeliuxiangbev.com/application/models"
 )
 
 type EntryController struct {

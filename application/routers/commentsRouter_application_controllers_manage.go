@@ -7,12 +7,12 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["github.com/yeliuxiangbev.com/application/controllers/manage:EntryController"] = append(beego.GlobalControllerRouter["github.com/yeliuxiangbev.com/application/controllers/manage:EntryController"],
+	beego.GlobalControllerRouter["github.com/fzpying/yeliuxiangbev.com/application/controllers/manage:EntryController"] = append(beego.GlobalControllerRouter["github.com/fzpying/yeliuxiangbev.com/application/controllers/manage:EntryController"],
 		beego.ControllerComments{
-			Method: "Get",
-			Router: `/manage/entry`,
+			Method:           "Get",
+			Router:           `/manage/entry`,
 			AllowHTTPMethods: []string{"get"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
 }

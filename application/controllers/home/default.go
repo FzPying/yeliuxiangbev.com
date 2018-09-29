@@ -1,6 +1,6 @@
 package home
 
-import "github.com/yeliuxiangbev.com/application/controllers"
+import "github.com/fzpying/yeliuxiangbev.com/application/controllers"
 
 type MainController struct {
 	controllers.BaseController

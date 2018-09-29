@@ -1,0 +1,208 @@
+
+section {
+    position: relative;
+}
+
+button:focus {
+    outline: 0px;
+}
+
+/*
+导航栏
+*/
+.header .navbar-main {
+    position: relative;
+    height: auto;
+    border-bottom: 1px solid #ededed;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+    transition: all 0.5s ease-in;
+
+}
+
+.header .navbar-main .navbar-container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.header .navbar-main .navbar-container .navbar {
+    position: static;
+}
+
+.header .navbar-main .main-logo {
+    background: url(/static/img/logo.png) no-repeat 0px 0px;
+    background-size: cover;
+    min-width: 124px;
+    min-height: 70px;
+    padding: 0px;
+}
+
+.header .navbar-main .navbar-nav .nav-item {
+    z-index: 200;
+}
+
+.header .navbar-main .navbar-nav .nav-item.dropdown-son {
+
+}
+
+.header .navbar-main .navbar-nav .nav-item .nav-link {
+    position: relative;
+    display: block;
+    padding: 1.907rem 2rem;
+}
+
+.header .navbar-main .navbar-nav .nav-item:hover .nav-link {
+    color: red;
+}
+
+.header .navbar-main .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: red;
+    bottom: 0px;
+    left: 0px;
+    transition: width .8s;
+}
+
+.header .navbar-main .navbar-nav .nav-item:hover .nav-link::before {
+    width: 100%;
+}
+
+.header .navbar-main .navbar-nav .dropdown-son .dropdown-menu-wrapper {
+    position: absolute;
+    left: 0;
+    border-bottom: 0.5px solid #e5e5e5;
+    transform: rotate3d(1, 0, 0, -90deg);
+    z-index: 100;
+    max-height: 0px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.07);
+    transform-origin: 50% 0%;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+}
+
+.header .navbar-main .navbar-nav .dropdown-son:hover .dropdown-menu-wrapper {
+    transform: rotate3d(0, 0, 0, 0deg);
+    transform-origin: 50% 0%;
+    max-height: 1000px;
+}
+
+.header .navbar-main .navbar-nav .dropdown-son .dropdown-menu-wrapper .dropdown-menu-list {
+    margin: 30px auto;
+    width: 100%;
+    zoom: 1;
+}
+
+.header .navbar-main .navbar.navbar-expand-lg {
+    padding: 0px;
+}
+
+.header .navbar-main .logo {
+    padding: .2822rem;
+}
+
+.header .navbar-main .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .9);
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: red;
+}
+
+/*
+页脚
+*/
+.footer {
+    background-color: #373D44;
+    color: #FFFFFF;
+    padding: 5rem 0 0;
+}
+
+.footer .footer-copyright {
+    font-size: 12px;
+    margin: 50px auto 0;
+    text-align: center;
+    border-top: 1px solid rgba(229, 229, 229, 0.2);
+    padding: 32px 0;
+    color: #b6b6b6;
+}
+
+.footer .footer-widget {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer .footer-widget a,
+.footer .footer-copyright a {
+    color: #fff;
+    transition: all .8s;
+}
+
+.footer .footer-widget a:hover,
+.footer .footer-copyright a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.footer .footer-copyright p {
+    color: #fff;
+}
+
+.footer .qrcode a {
+    color: #fff;
+}
+
+.footer .qrcode a:hover {
+    color: red;
+}
+
+/*
+其他
+*/
+.owl-nav {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 0px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    border: 2px solid red;
+}
+
+.owl-theme .owl-nav [class*=owl-] .fa {
+    color: #fff;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover .fa {
+    color: red;
+}
+
+.owl-theme .owl-nav .owl-prev {
+    float: left;
+    margin-left: 20px;
+}
+
+.owl-theme .owl-nav .owl-next {
+    float: right;
+    margin-right: 20px;
+}
+
+.owl-theme .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
